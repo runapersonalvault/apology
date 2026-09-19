@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dhana — Un Best Friend Ah Nan Kaathutu Iruppen</title>
+  <meta name="description" content="A personal midnight letter and honest confession to Dhana from Vimala.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="envelope.css">
+  <link rel="stylesheet" href="sections.css">
+  <link rel="stylesheet" href="letter.css">
+</head>
+
+<body>
+  <canvas id="particle-canvas" aria-hidden="true"></canvas>
+  <div id="screen-dimmer" aria-hidden="true"></div>
+
+  <div class="viewport-wrapper">
+    <!-- SECTION 1: ENVELOPE OPENING INTERFACE -->
+    <header class="envelope-screen" id="opening-section">
+      <div class="envelope-glow" aria-hidden="true"></div>
+      <div class="envelope-header">
+        <span class="recipient-name">Dhana...</span>
+        <p class="envelope-subtext">Idha padikanum nu unaku thonuchuna mattum open pannu.</p>
+      </div>
+
+      <div class="envelope-wrapper" id="envelope-wrapper" role="button" tabindex="0"
+        aria-label="Open the letter for Dhana">
+        <div class="envelope-box" id="envelope-box">
+          <div class="flap-top" id="flap-top"></div>
+          <div class="flap-left"></div>
+          <div class="flap-right"></div>
+          <div class="flap-bottom"></div>
+          <div class="letter-peek">
+            <div class="letter-peek-lines"></div>
+            <div class="letter-peek-lines"></div>
+            <div class="letter-peek-lines"></div>
+            <div class="letter-peek-lines"></div>
+          </div>
+          <div class="wax-seal" aria-hidden="true">D</div>
+        </div>
+      </div>
+
+      <button type="button" class="open-btn" id="open-btn">
+        <span>Open pandriya?</span><span aria-hidden="true">✦</span>
+      </button>
+
+      <div class="letter-intro-reveal" id="letter-intro-reveal">
+        <p class="intro-revealed-text">"Enaku sollanum nu romba naala irundha sila vishayam irukku..."</p>
+        <div class="typewriter-container" aria-live="polite">
+          <span class="typewriter-text" id="typewriter-text"></span>
+        </div>
+        <div class="scroll-indicator" id="scroll-indicator">
+          <span>Scroll down</span>
+          <div class="scroll-arrow" aria-hidden="true"></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- MAIN CONTENT STREAM -->
+    <main class="content-stream" id="content-stream" aria-hidden="true">
+      <!-- SECTION 2 — "NAN ANNIKU..." -->
+      <section class="letter-section" id="section-anniku" aria-labelledby="heading-anniku">
+        <div class="diary-card">
+          <span class="section-tag">Enakku ipo dhan Realization eh varudhu</span>
+          <h2 class="section-title" id="heading-anniku">Nan anniku...</h2>
+          <p class="diary-text">Anniku unta enaku vandha feelings ah sollirukkama naane vechurundha, ni ipo ennala
+            kashtapatturukka mata nu thonudhu.</p>
+          <p class="diary-text">Maybe naan konjam late ah dhaan purinjikitten...En actions unna ivlo hurt pannum nu,</p>
+          <p class="diary-text">En attention, en care, en presence...Unau ivlo affect aagum nu naan appo purinjikala.
+            Nan la un attention la ye illa nu nenaicha.</p>
+          <p class="diary-text highlight">I never wanted you to get hurt because of me.</p>
+          <p class="diary-text">I'm really sorry for everything.Unnakaga nu nan panna ellame unna innum adhigama dhan
+            hurt pannirukku</p>
+        </div>
+      </section>
+
+      <!-- SECTION 3 — GUILT -->
+      <section class="letter-section" id="section-guilt" aria-labelledby="heading-guilt">
+        <div class="diary-card">
+          <span class="section-tag">Ellame en Thappu dhan~</span>
+          <h2 class="section-title handwritten" id="heading-guilt">Enaku guilty ah irukku, Dhana.</h2>
+          <p class="diary-text">Unna face pandradhukku ipo kkashtama irukku da...</p>
+          <p class="diary-text">Un feelings ah naan create panniten nu solla mudiyadhu...</p>
+          <p class="diary-text">Aana naan kudutha closeness, attention, care... adhu unaku vera maari feel aagirundha,
+            adhula enoda part irukku.</p>
+          <p class="diary-text">Adha accept panna enaku kashtama irundhalum... accept pannama irukka mudiyala.</p>
+          <div class="post-it-wrapper">
+            <div class="post-it-note">
+              <div class="post-it-text">Sorry Dhana.</div>
+              <div class="post-it-sub">— genuinely, sorry da</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 4 — DEEPAK / THE BOUNDARY -->
+      <section class="letter-section" id="section-boundary" aria-labelledby="heading-boundary">
+        <div class="diary-card boundary-card">
+          <span class="section-tag">Unna Yeathukkavum mudiyala ~ Vittu pogavum mudiyala</span>
+          <h2 class="section-title" id="heading-boundary">Ennaala Unna ipdipaaka mudiyala mudiyala.</h2>
+          <p class="diary-text">Unna hurt pannanum nu naan no sollala.</p>
+          <p class="diary-text">Enala Deepak ku dhrogam panna idhuku mela manasu varala.</p>
+          <p class="diary-text">Adhunala enaku un mela irundha care illa nu artham illa.</p>
+          <p class="diary-text">Un worth ah question pannadhum illa.</p>
+          <p class="diary-text highlight">En relationship ah betray panna enaku manasu varala. Adhanala dhaan naan andha
+            boundary ah cross panna mudiyala.</p>
+        </div>
+      </section>
+
+      <!-- SECTION 5 — "AANA NI POITA..." -->
+      <section class="letter-section void-section" id="section-void" aria-labelledby="heading-void">
+        <span class="section-tag" style="text-align: center;">Un Silence enaku Heart Breaing ah irukku</span>
+        <h2 class="void-lead" id="heading-void">Aana ni poita void um thaanga mudiyala.</h2>
+        <div class="void-echo">
+          <p>Idhu dhaan enaku puriyama irukku.</p>
+          <p>One side la naan correct ah irukanum nu try panren...</p>
+          <p>Innoru side la...</p>
+          <p>Naan ennoda morals ah meeri behave pandrano nu romba hurt aaguren da..</p>
+          <p style="color: #f1f5f9; font-size: 1.55rem; margin: 1.2rem 0;">Un absence romba loud ah irukku.</p>
+          <p>Daily pesuna oruthan sudden ah pesama poita... andha silence ku kooda oru sound irukku nu ipo dhaan
+            puriyudhu. Loosu mari code edludhuren rathriyum pagalum ah... </p>
+        </div>
+        <div class="void-silence">...</div>
+      </section>
+
+      <!-- SECTION 6 — "THANKS FOR EVERYTHING" -->
+      <section class="letter-section" id="section-thanks" aria-labelledby="heading-thanks">
+        <div class="diary-card" style="text-align: center;">
+          <span class="section-tag">Un last words....</span>
+          <h2 class="section-title" id="heading-thanks" style="display: none;">Thanks for everything</h2>
+          <div class="chat-moment-container">
+            <div class="chat-bubble-last">Thanks for everything.</div>
+          </div>
+          <p class="diary-text" style="max-width: 580px; margin: 0 auto;">Ni dhidirnu call panni apdi solluva nu
+            yosikkala</p>
+          <p class="diary-text" style="max-width: 580px; margin: 0.5rem auto 1.5rem auto;">Simple ah irundhalum... enaku
+            adhu romba heavy ah irundhudhu.</p>
+          <div class="chat-questions-list">
+            <div class="chat-question-item">"Nee goodbye sollitiya?"</div>
+            <div class="chat-question-item">"Idhoda ellam avlodhana?"</div>
+            <div class="chat-question-item">"Unta ennala thiruppi pesave mudiyadha?"</div>
+            <div class="chat-question-item">"Thiruppi paakave mudiyadha?"</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 7 — WHAT I ACTUALLY MISS -->
+      <section class="letter-section" id="section-memories" aria-labelledby="heading-memories">
+        <div class="diary-card">
+          <span class="section-tag">What I Miss is you not your attention</span>
+          <h2 class="section-title" id="heading-memories">Naan unna miss panradhu...</h2>
+          <p class="diary-text">Unna oru possibility ah miss panla.</p>
+          <p class="diary-text">Unna oru relationship ah miss panla.</p>
+          <p class="diary-text highlight" style="color: var(--accent-rose); font-size: 1.45rem;">En best friend ah miss
+            panren.</p>
+          <div class="memories-grid">
+            <div class="memory-item">
+              <span class="memory-glyph">✦</span>
+              <p class="memory-text">Random ah pesinadhu.</p>
+            </div>
+            <div class="memory-item">
+              <span class="memory-glyph">⋆</span>
+              <p class="memory-text">Loosu mari sirichu jolly ah irundhadhu.</p>
+            </div>
+            <div class="memory-item">
+              <span class="memory-glyph">✦</span>
+              <p class="memory-text">Edhavadhu sollanum na first unaku text pannadhu.</p>
+            </div>
+            <div class="memory-item">
+              <span class="memory-glyph">⋆</span>
+              <p class="memory-text">Onnum pesaama irundhalum awkward ah illaama irundhadhu.</p>
+            </div>
+          </div>
+          <p class="diary-text" style="text-align: center;">Adhu dhaan miss panren. En life la oru paiyan friend oda
+            ivlo happy ah nan irundhadhu illa.... Adhan en life la ni special nu sonnen</p>
+          <div class="miss-conclusion">"Namaku irundha friendship ah dhaan."</div>
+        </div>
+      </section>
+
+      <!-- SECTION 8 — THE HONEST QUESTION -->
+      <section class="letter-section" id="section-question" aria-labelledby="heading-question">
+        <div class="honest-question-box">
+          <span class="section-tag">Idhuku mela enta irukuradhu acceptance & hope dhan...</span>
+          <h2 class="big-question" id="heading-question">Raathri fulla en mind la irundha kelvi "Idhoda ellam
+            avlodhana?" </h2>
+          <p class="diary-text" style="font-size: 1.35rem; color: #cbd5e1;">Maybe yes.</p>
+          <p class="diary-text">Maybe nee move on aaganum.</p>
+          <p class="diary-text">Maybe naan accept pannanum.</p>
+          <p class="diary-text" style="font-style: italic; color: var(--accent-rose); margin-top: 1rem;">But... En
+            manasula innum oru small hope vechurukku.</p>
+          <div style="margin: 2.5rem 0;">
+            <p class="diary-text" style="font-size: 1.25rem;">Oru vela...</p>
+            <span class="diary-pause">• • •</span>
+            <p class="diary-text" style="font-size: 1.35rem;">En nyabagam thiruppi future la vandha...</p>
+            <span class="diary-pause">• • •</span>
+            <p class="diary-text highlight"
+              style="font-size: 1.8rem; color: #f8fafc; font-family: var(--font-handwriting);">Please va.</p>
+          </div>
+          <div class="clarification-note">
+            <p>Unaku comfortable ah irundha mattum.</p>
+            <p>Unaku thonuchuna mattum.</p>
+            <p style="color: var(--accent-lavender); margin-top: 0.4rem;">Reply panna vendiya obligation illa.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 9 — THE PROMISE -->
+      <section class="letter-section" id="section-promise" aria-labelledby="heading-promise">
+        <div class="promise-card">
+          <span class="section-tag">Ennoda Promise idhu dhan ~</span>
+          <h2 class="section-title" id="heading-promise">Nan inga iruppen...</h2>
+          <p class="diary-text">Unaku oru naal thiruppi pesa thonuchuna...</p>
+          <p class="diary-text">Nan unta edhuvum explain panna force panna maaten.</p>
+          <p class="diary-text">Old things ellam immediately fix panna try panna maaten.</p>
+          <p class="diary-text">Just... Un best friend ah thiruppi irukka try panren.</p>
+          <span class="central-promise-line">"Unakaga un best friend ah nan kaathutu iruppen."</span>
+          <div class="clarification-note">
+            <p>Adhu unaku oru pressure ah irukka koodadhu.</p>
+            <p>Nee varanum nu unna kattayam paduthanum nu illa.</p>
+            <p>Nee happy ah irundha podhum.</p>
+            <p style="margin-top: 0.8rem; font-style: italic; color: #f1f5f9;">If someday namma thiruppi pesina... Adhu
+              podhum.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 10 — FINAL LETTER & CLOSING -->
+      <section class="letter-section" id="section-final-letter" aria-labelledby="heading-final-letter">
+        <div class="final-letter-card">
+          <h2 class="letter-salutation" id="heading-final-letter">Dhana,</h2>
+          <p class="letter-body-p">Nan perfect ah handle pannala.</p>
+          <p class="letter-body-p">Naanum confuse aayirundhen.</p>
+          <p class="letter-body-p">Un feelings ah late ah dhaan purinjikitten.</p>
+          <p class="letter-body-p">And somewhere in between... Unna hurt panniten.</p>
+          <p class="letter-body-p highlight spaced">For that, I'm genuinely sorry.</p>
+          <p class="letter-body-p spaced">Nan Deepak ku dhrogam panna mudiyadhu.</p>
+          <p class="letter-body-p">Aana adhe time la... Un friendship ah lose panna kooda enaku easy ah illa.</p>
+          <p class="letter-body-p spaced">Idhula naan edhavadhu deserve panren nu sollala.</p>
+          <p class="letter-body-p">Un forgiveness ah demand panla.</p>
+          <p class="letter-body-p">Un reply ah expect panla.</p>
+          <p class="letter-body-p spaced">Just...</p>
+          <p class="letter-body-p highlight">Once upon a time, nee en best friend.</p>
+          <p class="letter-body-p">And that mattered. Innum matter aagudhu.</p>
+          <p class="letter-body-p spaced">Oru vela future la...</p>
+          <p class="letter-body-p">En nyabagam vandhu,</p>
+          <p class="letter-body-p" style="font-style: italic; color: var(--accent-burgundy); font-weight: 600;">'Indha
+            loosu kitta pesalam'</p>
+          <p class="letter-body-p">nu unaku thonuchuna...</p>
+          <p class="letter-body-p highlight" style="font-size: 1.6rem; color: var(--accent-burgundy);">Vaa.</p>
+          <p class="letter-body-p">Nan inga iruppen.</p>
+          <p class="letter-body-p">Un best friend ah.</p>
+          <div class="letter-signoff"><span class="letter-signature">— Vimala</span></div>
+          <div class="letter-footnote">No pressure. • No expectation. • Just an open door.</div>
+        </div>
+
+        <div class="interactive-actions">
+          <button type="button" class="ghost-btn" id="last-thing-btn">
+            <span>One last thing...</span><span aria-hidden="true">✦</span>
+          </button>
+          <div class="last-thing-box" id="last-thing-box" aria-live="polite">
+            <div class="last-thing-text">
+              <p>"I genuinely hope you're okay, Dhana. Un success, un life ... Un career, Unaku oru nalla vishayam
+                nadandha, nan dhan 1st happy aaven"</p>
+              <p style="margin-top: 0.6rem; font-size: 1.25rem; color: #e2c08d;">"Even if I'm not a part of that okay."
+              </p>
+            </div>
+          </div>
+          <button type="button" class="close-letter-btn" id="close-letter-btn">Close this letter</button>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- FINAL TRANQUIL DAWN SCREEN -->
+  <div id="dawn-screen" role="dialog" aria-modal="true" aria-label="Closing Thoughts">
+    <div class="dawn-container">
+      <p class="dawn-quote">
+        "Some friendships don't need a perfect ending.<br>
+        Sometimes they just need space."
+      </p>
+      <div class="dawn-takecare">Take care of yourself, Dhana.</div>
+      <p style="font-family: var(--font-body); font-size: 1.15rem; color: #574c48; font-style: italic;">That's all I
+        wanted to say.</p>
+      <div class="dawn-signature">— un best friend, Vimala</div>
+      <button type="button" class="reopen-btn" id="reopen-btn">Read again</button>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+
+</html>
