@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/runapersonalvault/apology/issues"
   },
-  "homepage": "https://github.com/runapersonalvault/apology#readme"
+  "homepage": "https://github.com/runapersonalvault/apology#readme",
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
+  }
 }
